@@ -1,0 +1,224 @@
+*
+{
+    padding:0px;
+    margin: 0px;
+}
+body
+{
+    color:white;
+    background-color: #232323;
+}
+
+.BGDiv 
+{
+    height: 970px;
+    background-image: url(BgImg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+
+    position: relative;
+    justify-content: center   ;
+    color:#ffffff;
+}
+@media (max-width:400px)
+{
+    .BGDiv
+    {
+        background-image: None;
+    }
+}
+.Darkness
+{
+    height: 970px;
+    width: 100%;
+    background-color: #000000;
+    top:0;
+    opacity: 60%;
+    position: absolute;
+}
+.LogoImg 
+{
+ height: 55px;
+ position:absolute;
+ top: 22px;
+ left:163px;
+ background-color: transparent;
+
+}
+.FormSection
+{
+  height: 709px;
+  width: 480px;
+  background-color: #000000b0;
+  position:absolute;
+  top:130px;
+  display: block;
+  justify-content: center;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+  left:535px;
+  
+  
+ 
+}
+.Input
+{
+    height: 55px;
+    margin-left: 55px;
+    width:352px;
+    margin-bottom: 14px;
+    padding-left:14px;
+    border:1px solid rgb(77, 77, 77);
+    font-size: 16px;
+    background-color: #2f2f2f50;
+    color: white;
+}
+
+input:focus {
+  border: 2.5px solid #ffffff;
+  outline:#ffffff; 
+}
+
+.SignIn
+{
+    font-size: 32px;
+    margin-top:45px;
+    margin-left:55px;
+    margin-bottom:35px;
+    
+}
+.ForgotPass
+{
+    display: block;
+    margin-top:16px;
+     margin-left: 180px ;
+     color: white;
+}
+.OR{
+    margin-top: 12px;
+    margin-bottom:12px;
+    margin-left:230px;
+}
+.LearnMore
+{
+    display: block;
+    margin-left: 55px;
+    margin-top:50px;
+    color:rgb(43, 0, 255);
+}
+.RememberMe
+{
+    margin-left:55PX;
+    margin-top:18px;
+    margin-bottom:18px;
+    display: block;
+    font-size: 18px;
+
+}
+.RememberMe input
+{
+    
+}
+
+.SignUpNow
+{
+    margin-left:55px;
+    display: flex;
+    display: block;
+  
+
+   
+}
+.SignUpNowA
+{
+      color:white;
+}
+ .NewSignUpText
+{
+    align-content: start;
+}
+.SignUpNowA
+{
+    margin:0px;
+}
+.SignInBtn
+{
+    background-color: rgb(229, 9, 20);
+    color:white;
+    font-size: 18px;
+    border:none;
+}
+button{
+    display: block;
+    margin-left:55px;
+    height:45px;
+    width: 370px;
+    color: white;
+    border: 0px solid transparent;
+    border-radius: 3px;
+    font-family:Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+
+}
+.SignInCode{
+    background-color: rgba(87, 87, 87, 0.547);
+    border:none;
+    font-size: 18px;
+}
+.FooterSection {
+    background-color: #232323;
+    color: #ffffff;
+    padding: 30px 20px;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.FooterSection .Questions {
+    margin-bottom: 20px;
+}
+pre
+{
+    color: #ffffff;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    max-width: 1000px;
+    margin-left: 70px;
+}
+.FooterSection .Questions a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.FooterSection .Links {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.FooterSection .Links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.FooterSection .Links a:hover {
+    text-decoration: underline;
+}
+
+.language-select {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.language-select select {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #333;
+    padding: 8px 12px;
+    font-size: 13px;
+    border-radius: 2px;
+}
