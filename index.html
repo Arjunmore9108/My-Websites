@@ -1,37 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">      
     <title>Netflix Login</title>
     <link href="style.css" rel="stylesheet">
+    <link href="media-queries.css" rel="stylesheet">
 </head>
 <body>
     <div class="BGDiv"></div>
     <div class="Darkness"></div>
-      <div class="NavBar">
-            <div class="Logo">
-                <a href="https://www.netflix.com/"><img src="pngwing.com.png" class="LogoImg"></a>
-            </div>
+<header>
+     <div class="Navbar">
+        <div class="LogoContainer">
+            <img src="pngwing.com.png" class="Logo">
         </div>
-    <div class="FormSection">
-        <p class="SignIn">Sign In</p>
-        <input class="Input" placeholder="Email or mobile number">
-        <input class="Input" placeholder="Password">
-        <button class="SignInBtn">Sign In</button>
-        <p class="OR">OR</p>
-        <button class="SignInCode">Use a sign-in-code</button>
-        <a href="https://www.netflix.com/loginhelp"class="ForgotPass">Forgot Password</a>
-        <label class="RememberMe">
-            <input type="checkbox" name="" value="yes">
-                Remember me     
-        </label>
-        <div class="SignUpNow">
-            <p class="NewSignUpText">New to Netflix?<a href=""class="SignUpNowA">Sign up now. </a></p>
-        </div>
-        <a href=""class="LearnMore">Learn more.</a>
+
     </div>
-        
-        
-   
+</header>
+    <div class="FormContainer">
+        <div class="FormSection">
+            <div class="FormUpperSection">
+                <p class="SignIn">Sign In</p>
+                <div class="FormInput">
+                    <input class="Input1" placeholder="Email or mobile number">
+                    <input class="Input2" placeholder="Password">
+            </div>
+            <div class="FormMiddleSection">
+                    <button class="SignInBtn">Sign In</button>
+                    <p class="OR">OR</p>
+                    <button class="SignInCode">Use a sign-in code</button>
+                    <a href="" class="ForgottenPassword">Forgotten password?</a>
+            </div>
+            <div class="FormLowerSection">
+                    <label class="RememberMe">
+                    <input type="checkbox" name="" value="yes">Remember me
+                    <br>
+                    <br>
+                    <p>New to Netflix?</p>
+                    <a href="#" class="SignUpNow">Sign up now.</a>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <a href="#" class="LearnMore">Learn more</a>
+            </div>     
+        </div>
+    </div>
 <footer class="FooterSection">
     <p class="Questions">Questions? <a href=""> Call 000-800-919-1743 (Toll-Free)</a></p>
    <div class="Links">
@@ -40,7 +56,7 @@
     <a href="https://help.netflix.com/legal/termsofuse" id="L">Term of use</a>
     <a href="https://help.netflix.com/legal/privacy" id="L">Privacy</a>
     <a href="https://www.netflix.com/in/login#" id="L">Cookie Preferences</a>
-    <a href="https://help.netflix.com/legal/corpinfo" id="L"><pre>Corporation Information</pre></a>
+    <a href="https://help.netflix.com/legal/corpinfo" id="L" class="CI">Corporation Information</a>
    </div>
     <div class="language-select">
       <select name="language" id="language">
