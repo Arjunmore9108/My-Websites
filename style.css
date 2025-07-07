@@ -2,175 +2,230 @@
 {
     padding:0px;
     margin: 0px;
+        
+
 }
 body
 {
     color:white;
     background-color: #232323;
+    justify-content: center;
+    gap: none;    flex: 1;
+
+    
 }
 
 .BGDiv 
 {
-    height: 970px;
+    height: 920px;
     background-image: url(BgImg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
-
+    flex: 1;
     position: relative;
     justify-content: center   ;
     color:#ffffff;
 }
-@media (max-width:400px)
-{
-    .BGDiv
-    {
-        background-image: None;
-    }
-}
+
 .Darkness
 {
-    height: 970px;
+    height: 920px;
     width: 100%;
     background-color: #000000;
     top:0;
     opacity: 60%;
     position: absolute;
 }
-.LogoImg 
+.Navbar
 {
- height: 55px;
- position:absolute;
- top: 22px;
- left:163px;
- background-color: transparent;
+    height: 100px;
+    width: 100% ;
+    position: absolute;
+    display: grid;
+    top:0;
 
+}
+.LogoContainer
+{
+    height: fit-content;
+    width: 50%;
+    display: flex;
+   justify-content: center; 
+   align-items: center;   
+   text-align: center; 
+   padding-top:14px;  
+}
+
+.Logo
+{
+    height: 53px;
+    width: fit-content;
+    display: flex;
+    
+}
+.FormContainer
+{
+    height: fit-content;
+    width: 100%;
+    justify-content: center;
+    display: flex;
 }
 .FormSection
 {
-  height: 709px;
-  width: 480px;
-  background-color: #000000b0;
-  position:absolute;
-  top:130px;
-  display: block;
-  justify-content: center;
-  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
-  left:535px;
-  
-  
- 
+    height: 709px;
+    width: 480px;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    background-color: rgba(0, 0, 0, 0.596);
+    position: absolute;
+    justify-self: center;
+    top: 100px;
+    ;
 }
-.Input
+.FormUpperSection
 {
-    height: 55px;
-    margin-left: 55px;
-    width:352px;
-    margin-bottom: 14px;
-    padding-left:14px;
-    border:1px solid rgb(77, 77, 77);
-    font-size: 16px;
-    background-color: #2f2f2f50;
-    color: white;
-}
-
-input:focus {
-  border: 2.5px solid #ffffff;
-  outline:#ffffff; 
-}
-
-.SignIn
-{
-    font-size: 32px;
-    margin-top:45px;
-    margin-left:55px;
-    margin-bottom:35px;
+    height: fit-content;
+    width: 370px;
+    justify-self: center;
     
-}
-.ForgotPass
-{
-    display: block;
-    margin-top:16px;
-     margin-left: 180px ;
-     color: white;
-}
-.OR{
-    margin-top: 12px;
-    margin-bottom:12px;
-    margin-left:230px;
-}
-.LearnMore
-{
-    display: block;
-    margin-left: 55px;
-    margin-top:50px;
-    color:rgb(43, 0, 255);
-}
-.RememberMe
-{
-    margin-left:55PX;
-    margin-top:18px;
-    margin-bottom:18px;
-    display: block;
-    font-size: 18px;
-
-}
-.RememberMe input
-{
-    
-}
-
-.SignUpNow
-{
-    margin-left:55px;
-    display: flex;
-    display: block;
-  
-
+    padding-top: 55px;
    
 }
-.SignUpNowA
+.SignIn
 {
-      color:white;
+    font-size: 28px; 
+    font-weight: bolder; 
 }
- .NewSignUpText
+.FormInput
 {
-    align-content: start;
+    margin-top: 16px;
+    height: fit-content;
+    
 }
-.SignUpNowA
+
+.FormUpperSection .Input1 , .Input2
 {
-    margin:0px;
-}
-.SignInBtn
-{
-    background-color: rgb(229, 9, 20);
-    color:white;
+    height: 52px;
+    width: 358px;
     font-size: 18px;
-    border:none;
-}
-button{
-    display: block;
-    margin-left:55px;
-    height:45px;
-    width: 370px;
+    background-color: #bcbcbc14;
+    border-radius: 5px;
+    border: 1.5px solid rgb(128, 128, 128);
+    margin-bottom: 32px;
     color: white;
-    border: 0px solid transparent;
-    border-radius: 3px;
-    font-family:Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    padding-left: 10px;
+    
+    
+}
+.FormMiddleSection
+{
+    height: fit-content;
+    width: 370px;
+    justify-self: center;
+    display: block;
+    margin-top: 0;
+    
+   
+}
+.Input2
+{
+    margin-bottom: 18px;
+}
+.FormMiddleSection button
+{
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    border:none;
+    border-radius:4px;
+    margin-bottom:14px;    
+}
+
+.FormMiddleSection .OR
+{
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 18px;
 
 }
-.SignInCode{
-    background-color: rgba(87, 87, 87, 0.547);
-    border:none;
-    font-size: 18px;
+.FormMiddleSection .SignInBtn
+{
+    background-color: rgb(229, 9, 20);
+    font-size: 16px;
+    color: white;
+   
 }
+.FormMiddleSection .ForgottenPassword
+{   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    color: #ffffff;
+    font-size: 16px;
+    
+}
+
+.SignInCode
+{
+    background-color: rgba(128, 128, 128, 0.4);
+    color: white;
+}
+
+.FormLowerSection  
+{
+    height: fit-content;
+    width: 100%;
+}
+
+.FormLowerSection  input
+{
+    margin-right:10px;
+    margin-top: 15px;
+    height:20px;
+    width: 20px;
+    align-items: center ;
+}
+
+label
+{
+    font-size: 16px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.FormLowerSection p
+{
+    text-align: start;
+    display: inline;
+    color:white;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.FormLowerSection .SignUpNow
+{
+    font-size: 16px;
+    font-weight: 800;
+    color: white;
+    text-decoration: none;
+    
+}
+
+.FormLowerSection .LearnMore
+{
+    font-size:14px;
+    color: #0080ff;
+    margin-top:55px;
+}
+
+
 .FooterSection {
     background-color: #232323;
     color: #ffffff;
     padding: 30px 20px;
     font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
     font-size: 16px;
-    line-height: 1.4;
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -197,14 +252,19 @@ pre
     grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
     gap: 10px;
     margin-bottom: 20px;
+    justify-content: center;
 }
 
 .FooterSection .Links a {
     color: #ffffff;
     text-decoration: none;
     font-size: 14px;
+    text-align: center;
 }
-
+.FooterSection .Links .CI
+{
+    text-align: start;
+}
 .FooterSection .Links a:hover {
     text-decoration: underline;
 }
@@ -221,4 +281,131 @@ pre
     padding: 8px 12px;
     font-size: 13px;
     border-radius: 2px;
+}
+
+@media  screen and (max-width:600px) {
+    body
+    {
+        background-color: #232323;
+
+    }
+    .BGDiv
+    {
+        background-color: black;
+        background-image: none;
+        width: 100vw;
+        height: 612px;
+       
+        
+    }
+    .FormContainer
+    {
+        margin-top: 0px;
+        padding-top:0px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+    .FormSection
+    {
+        width: 613px;
+        opacity: 100%;
+        background-color: black;
+
+    }
+    .LogoContainer
+    {
+        height: fit-content;
+        width:100%;
+
+        justify-content: left;  
+        padding-left: 23px;
+
+    }
+    .Navbar
+    {
+        height: fit-content;
+    }
+    .Logo 
+    {
+        height: 34px;   
+    }
+    .SignIn
+    {
+        font-size: 22px;
+        font-weight: 900;
+        
+    }
+    .FormSection
+    {
+        width: 100%;
+
+    }
+    .FormInput
+    {
+        width: 100%;
+    }
+    .FormUpperSection
+    {
+        padding: 0px;
+        margin: 0px;
+    }
+    .FormUpperSection .SignIn
+    {
+        font-size: 28px;
+        font-weight: bolder;
+    }
+    .FormUpperSection .Input1 , .Input2
+    {
+        height: 55px;
+        width: 100%;;
+        display: flex;
+        justify-self: center;
+        box-sizing: border-box;
+        
+    }
+    .FormMiddleSection
+    {
+        height: 35px;
+        font-size: 14px;
+        width: 100%;
+        display: block;
+        justify-self: center;
+        flex: 1;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+    .Darkness 
+    {
+       display: none; 
+    }
+    .FormMiddleSection .SignInBtn,p
+    {
+        width: 100%    ;
+    }
+    .FormLowerSection
+    {   
+        display: inline;
+        position: absolute;
+        justify-content: start;
+        top: 415px;
+        height: fit-content;
+        width: 100%;
+        padding-top: 14px;
+    }
+    .RememberMe
+    {
+        padding: 0px;
+        justify-self: start;
+        height: fit-content;
+    }
+    .FooterSection {
+    background-color: #232323;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    position: relative; /* Can also use fixed or sticky if needed */
+    bottom: 0;
+}
+
 }
